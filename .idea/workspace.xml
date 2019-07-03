@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a358393f-a503-4583-b34a-07be7644b051" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test/endpoint/first.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test/endpoint/geocoding.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test/endpoint/geocoding0.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test/endpoint/revergeocoding.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test/endpoint/schemas/geocode.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test/endpoint/schemas/revergeocode.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test/test.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -103,31 +110,6 @@
               <item name="GeocodingAPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="GeocodingAPI" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="GeocodingAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeocodingAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeocodingAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeocodingAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeocodingAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeocodingAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="responses" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeocodingAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeocodingAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="schemas" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -213,12 +195,12 @@
       <option name="presentableId" value="Default" />
       <updated>1562171078180</updated>
       <workItem from="1562171081707" duration="11161000" />
-      <workItem from="1562189068292" duration="4731000" />
+      <workItem from="1562189068292" duration="4894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15892000" />
+    <option name="totallyTimeSpent" value="16055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -405,6 +387,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
