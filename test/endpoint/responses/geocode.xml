@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GeocodeResponse>
+    <status>OK</status>
+    <result>
+        <type>locality</type>
+        <type>political</type>
+        <formatted_address>Bosanska Otoka, Bosnia and Herzegovina</formatted_address>
+        <address_component>
+            <long_name>Bosanska Otoka</long_name>
+            <short_name>Bosanska Otoka</short_name>
+            <type>locality</type>
+            <type>political</type>
+        </address_component>
+        <address_component>
+            <long_name>Una-Sana Canton</long_name>
+            <short_name>Una-Sana Canton</short_name>
+            <type>administrative_area_level_2</type>
+            <type>political</type>
+        </address_component>
+        <address_component>
+            <long_name>Federation of Bosnia and Herzegovina</long_name>
+            <short_name>Federation of Bosnia and Herzegovina</short_name>
+            <type>administrative_area_level_1</type>
+            <type>political</type>
+        </address_component>
+        <address_component>
+            <long_name>Bosnia and Herzegovina</long_name>
+            <short_name>BA</short_name>
+            <type>country</type>
+            <type>political</type>
+        </address_component>
+        <geometry>
+            <location>
+                <lat>44.9594685</lat>
+                <lng>16.1894377</lng>
+            </location>
+            <location_type>APPROXIMATE</location_type>
+            <viewport>
+                <southwest>
+                    <lat>44.9452399</lat>
+                    <lng>16.1724758</lng>
+                </southwest>
+                <northeast>
+                    <lat>44.9710526</lat>
+                    <lng>16.2065506</lng>
+                </northeast>
+            </viewport>
+            <bounds>
+                <southwest>
+                    <lat>44.9452399</lat>
+                    <lng>16.1724758</lng>
+                </southwest>
+                <northeast>
+                    <lat>44.9710526</lat>
+                    <lng>16.2065506</lng>
+                </northeast>
+            </bounds>
+        </geometry>
+        <place_id>ChIJZTpt7BsuYUcRiEQytZ5O0hw</place_id>
+    </result>
+</GeocodeResponse>

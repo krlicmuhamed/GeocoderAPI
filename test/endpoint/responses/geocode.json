@@ -1,0 +1,74 @@
+{
+  "results": [
+    {
+      "address_components": [
+        {
+          "long_name": "Bosanska Otoka",
+          "short_name": "Bosanska Otoka",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Una-Sana Canton",
+          "short_name": "Una-Sana Canton",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Federation of Bosnia and Herzegovina",
+          "short_name": "Federation of Bosnia and Herzegovina",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Bosnia and Herzegovina",
+          "short_name": "BA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      "formatted_address": "Bosanska Otoka, Bosnia and Herzegovina",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 44.9710526,
+            "lng": 16.2065506
+          },
+          "southwest": {
+            "lat": 44.9452399,
+            "lng": 16.1724758
+          }
+        },
+        "location": {
+          "lat": 44.9594685,
+          "lng": 16.1894377
+        },
+        "location_type": "APPROXIMATE",
+        "viewport": {
+          "northeast": {
+            "lat": 44.9710526,
+            "lng": 16.2065506
+          },
+          "southwest": {
+            "lat": 44.9452399,
+            "lng": 16.1724758
+          }
+        }
+      },
+      "place_id": "ChIJZTpt7BsuYUcRiEQytZ5O0hw",
+      "types": [
+        "locality",
+        "political"
+      ]
+    }
+  ],
+  "status": "OK"
+}
