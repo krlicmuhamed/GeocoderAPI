@@ -12,7 +12,7 @@ export default function endpoint() {
     const url = 'https://maps.googleapis.com/maps/api/geocode/';
     const apiKey = 'AIzaSyD12EIr7kYvWQlgq6jkKHsqgDTaxtKoTSo';
 
-    // Smoke Test
+    //  Smoke Test
     before('status check', (done) => {
         const requester = chai.request(url).keepOpen();
         // every request fails because key and other parameters are not entered
@@ -36,6 +36,7 @@ export default function endpoint() {
     describe('JSON response', () => {
         let geocoderResponseObject: any;
 
+        //  "Negative test"
         it('should respond with error object', (done) => {
             chai.request(url)
                 .get('json?' + 'key=' + apiKey)
@@ -43,7 +44,6 @@ export default function endpoint() {
                     chai.expect(res).to.have.status(400);
                     chai.expect(res).be.json;
 
-                    // Sanity test
                     chai.expect(res.body.error_message).to.exist;
                     chai.expect(res.body.results).to.exist;
                     chai.expect(res.body.status).to.exist;
@@ -52,7 +52,7 @@ export default function endpoint() {
                 });
         });
 
-        // https://jsoneditoronline.org/?id=aa8e7fc084d6490687147ce5bc6de0bf
+        //  "Positive test"
         it('should respond with geocoding object', (done) => {
             chai.request(url)
                 .get('json?' + 'key=' + apiKey + '&address=Otoka')
@@ -73,7 +73,7 @@ export default function endpoint() {
                     done();
                 });
         });
-
+        //  "Negative test"
         it('should respond with request-denied status, invalid api-key', (done) => {
             chai.request(url)
                 .get('json?' + 'key=' + 'AIzaSyD12EIr7kYvWQlgq7jkKHsqgDTaxtKoTSo' + '&address=Otoka')
@@ -89,8 +89,8 @@ export default function endpoint() {
                     done();
                 });
         });
-
-        it('should respond with invalid-request status, invalid api-key', (done) => {
+        //  "Negative test"
+        it('should respond with invaRlid-request status, invalid api-key', (done) => {
             chai.request(url)
                 .get('json?' + 'key=' + 'AIzaSyD12EIr7kYvWQlgq7jkKHsqgDTaxtKoTSo')
                 .end((err, res) => {
@@ -105,7 +105,7 @@ export default function endpoint() {
                     done();
                 });
         });
-
+        //  "Negative test"
         it('should respond with invalid-request status, parameters missing', (done) => {
             //valid apiKey this time
             chai.request(url)
@@ -150,6 +150,7 @@ export default function endpoint() {
     });
     describe('XML response', () => {
         //no key
+        //  Negative test
         it('should respond with error object', (done) => {
             chai.request(url)
                 .get('xml?' + 'key=' + apiKey)
@@ -160,7 +161,7 @@ export default function endpoint() {
                     done();
                 });
         });
-
+        // Positive test
         it('should respond with geocoding object', (done) => {
             chai.request(url)
                 .get('xml?' + 'key=' + apiKey + '&address=Otoka')

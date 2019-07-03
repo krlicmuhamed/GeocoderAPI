@@ -12,7 +12,7 @@ export default function endpoint() {
     const url = 'https://maps.googleapis.com/maps/api/geocode/';
     const apiKey = 'AIzaSyD12EIr7kYvWQlgq6jkKHsqgDTaxtKoTSo';
 
-    // Smoke Test
+    //  Smoke Test
     before('status check', (done) => {
         const requester = chai.request(url).keepOpen();
         // every request fails because key and other parameters are not entered
@@ -36,6 +36,7 @@ export default function endpoint() {
     describe('JSON response', () => {
         let revergeocoderResponseObject: any;
 
+        //  "Negative test"
         it('should respond with error object', (done) => {
             chai.request(url)
                 .get('json?' + 'key=' + apiKey)
@@ -45,6 +46,7 @@ export default function endpoint() {
                     done();
                 });
         });
+        //  "Positive test"
         it('should respond with geocoding object', (done) => {
             //latlng=40.714224,-73.961452
             chai.request(url)
@@ -57,6 +59,7 @@ export default function endpoint() {
                     done();
                 });
         });
+        //  "Negative test"
         it('should respond with request-denied status, invalid api-key', (done) => {
             chai.request(url)
                 .get('json?' + 'key=' + 'AIzaSyD12EIr7kYvWQlgq7jkKHsqgDTaxtKoTSo' + '&latlng=40.714523,18.965243')
@@ -72,7 +75,7 @@ export default function endpoint() {
                     done();
                 });
         });
-
+        //  "Negative test"
         it('should respond with invalid-request status, invalid api-key', (done) => {
             chai.request(url)
                 .get('json?' + 'key=' + 'AIzaSyD12EIr7kYvWQlgq7jkKHsqgDTaxtKoTSo')
@@ -88,7 +91,7 @@ export default function endpoint() {
                     done();
                 });
         });
-
+        //  "Negative test"
         it('should respond with invalid-request status, parameters missing', (done) => {
             //valid apiKey this time
             chai.request(url)
@@ -105,7 +108,7 @@ export default function endpoint() {
                     done();
                 });
         });
-
+        //  "Negative test"
         it('should respond with invalid-request status, incorrect parameter', (done) => {
             //invalid location_type
             chai.request(url)
@@ -122,7 +125,7 @@ export default function endpoint() {
                     done();
                 });
         });
-
+        //  "Negative test"
         it('should respond with invalid-request status', (done) => {
             //valid apiKey this time
             chai.request(url)
@@ -139,7 +142,7 @@ export default function endpoint() {
                     done();
                 });
         });
-
+        //  "Negative test"
         it('should respond with zero-results status', (done) => {
             chai.request(url)
                 .get('json?' + 'key=' + apiKey + '&latlng=11.853801,45.135981')
@@ -158,6 +161,7 @@ export default function endpoint() {
                     done();
                 });
         });
+        //  "Positive test"
         it('should be a valid reverse geocoder object', () => {
             let ajv = new Ajv({
                 allErrors: true,
@@ -170,6 +174,7 @@ export default function endpoint() {
     });
     describe('XML response', () => {
         //no key
+        //  "Negative test"
         it('should respond with error object', (done) => {
             chai.request(url)
                 .get('xml?' + 'key=' + apiKey + '&latlng=40.714523,18.965243')
@@ -180,6 +185,7 @@ export default function endpoint() {
                     done();
                 });
         });
+        //  "Positive test"
         it('should respond with geocoding object', (done) => {
             chai.request(url)
                 .get('xml?' + 'key=' + apiKey + '&latlng=40.714523,18.965243')
